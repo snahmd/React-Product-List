@@ -1,0 +1,29 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.header {
+    padding: 0.5rem;
+    text-align: center;
+    margin-top: 5rem;
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: $cardNavBgColor;
+        font-family:monospace;
+    }
+    .btns {
+        @include flex(row, center, space-around, 1rem);
+        button{
+            padding:1rem;
+            border-radius:1rem;
+            border:none;
+            cursor:pointer;
+            text-transform: uppercase;
+            transition: all 1s;
+            &:hover{
+                background-color: $btnHoverColor;
+                
+            }
+        }
+    }
+}
